@@ -54,11 +54,7 @@ def generate_launch_description():
 
     package_path = get_package_share_directory('robot_pkg')
 
-    urdf_path = os.path.join(
-        package_path,
-        'urdf',
-        'my_robo.urdf'
-    )
+    urdf_path = os.path.join(package_path,'urdf','my_robo.urdf')
 
     with open(urdf_path, 'r') as file:
         robot_description = file.read()

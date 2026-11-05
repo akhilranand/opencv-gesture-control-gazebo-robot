@@ -1,8 +1,5 @@
 <robot name = "Robo1">
 
-
-
-
     <link name = "base_link">
         <visual>
             <origin xyz="0 0 0" />
@@ -31,15 +28,6 @@
                 izz="1.0"/>
         </inertial>
     </link>
-
-
-
-
-
-
-
-
-
 
     <link name = "left_wheel">
         <visual>
@@ -70,14 +58,6 @@
         </inertial>
     </link>
 
-
-
-
-
-
-
-
-
     <link name = "right_wheel">
         <visual>
             <origin xyz = "0 0 0" rpy = "0 1.5708 0" />
@@ -106,16 +86,6 @@
                 izz="0.05"/>
         </inertial>
     </link>
-
-
-
-
-
-
-
-
-
-
 
     <link name = "caster_wheel">
         <visual>
@@ -147,22 +117,11 @@
         </inertial>
     </link>
 
-
-
-
-
-
-
-
-
-
-
     <joint name = "caster_wheel_to_base_link" type = "fixed"> 
         <parent link = "base_link" />
         <child link = "caster_wheel" />
         <origin xyz = "0 -0.55 -0.3" rpy = "0 0 0" />
     </joint>
-
 
 <joint name="right_wheel_to_base_link" type="continuous">
     <parent link="base_link" />
@@ -177,10 +136,6 @@
     <origin xyz="-0.80 0.3 -0.1" />
     <axis xyz="1 0 0" />
 </joint>
-
-
-   
-
 
 <gazebo reference="base_link">
     <material>Gazebo/Blue</material>
@@ -197,7 +152,6 @@
 <gazebo reference="caster_wheel">
     <material>Gazebo/Red</material>
 </gazebo>
-
 
 <gazebo>
     <plugin
